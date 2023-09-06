@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        音视频文件引入时，默认情况下不允许用户自己控制播放停止
+        属性：
+            controls 是否允许用户控制播放
+            autoplay 音频文件是否自动播放
+                - 如果设置了autoplay 则音乐再打开页面时会自动播放
+                    但是目前来讲大部分浏览器都不会自动对音乐进行播放
+            loop 音乐是否循环播放
+
+     -->
+
+    <!-- 
+        除了通过src来指定外部文件的路径以外，还可以通过source来指定文件路径
+    -->
+
+
+    <!-- 
+        video引入视频文件
+            -使用方式跟audio基本上是一样的
+     -->
+
+    <video src="./videos/Gen-1 -541981795595936788 - Colorful claymation.mp4" controls autoplay loop></video>
+
+    <video controls>
+        对不起，您的浏览器不支持播放视频！请升级浏览器！
+        <source src="./videos/Gen-1 -541981795595936788 - Colorful claymation.mp4">
+    </video>
+
+    <iframe width="1120" height="630" src="https://www.youtube.com/embed/cGNiBWbymkc?si=ub1DLapD3_K8jwjQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
