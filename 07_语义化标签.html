@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>语义化标签</title>
+</head>
+<body>
+    <!-- 
+        网页除了需要被人看，还需要爬虫程序爬取，
+          w3c就希望能够帮助程序更好地爬取这个页面
+          于是他就添加了很多不同的语义化标签来帮助程序来识别页面
+          
+
+          main 主要内容，一个页面中最好只有一个main标签
+          header 头部内容
+          footer 底部内容
+          article 表示独立的内容
+          aside 侧边栏，和主体独立的内容
+          nav 表示导航
+          section 独立的区块
+          em 斜体加强
+             Marks text that has stress emphasis. 
+             The <em> element can be nested, with each nesting level indicating a greater degree of emphasis.
+          cite 用于包含引用作品的标题。这个引用可能是一个根据适当的上下文约定关联引用的元数据的缩写。
+          s 使用删除线来渲染文本。
+          img 将一张图像嵌入文档。
+          area 在图片上定义一个可点击区域。图像映射（image map）允许图像上的几何区域与超链接关联。
+          var 表示数学表达式或编程上下文中的变量名称。尽管该行为取决于浏览器，但通常使用当前字体的斜体形式显示。
+
+
+          通过这些语义化标签，可以对网页中的不同内通进行描述，
+            方便爬虫程序识别页面，但是大部分情况下我们不会大量使用这些标签
+        
+          实际开发中，比较常见的是，使用div代替所有标签
+
+
+          作业1:
+            分别为上述7个标签创建一个demo
+          作业2:
+            查看mdn文档，找到5个标签，并注明他们的作用
+          固定作业：
+            整理笔记
+     -->
+    <header>头部内容</header>
+    <main>主题内容</main>
+    <footer>底部内容</footer>
+    <article class="forcast">
+        <h1>Weather forcast for <em>Zürich</em></h1>
+        <article class="day-forcast">
+            <h2>07 September 2023</h2>
+            <p><s>Rain.</s>Rain.</p>
+        </article>
+        <article class="day-forcast">
+            <h2>08 September 2023</h2>
+            <p>Periods of rain.</p>
+        </article>
+        <article class="day-forcast">
+            <h2>09 September 2023</h2>
+            <p>Heavy rain.</p>
+        </article>
+    </article>
+    <aside>
+        <p>how will the weather be</p>
+    </aside>
+    <nav class="crumbs">
+        <ol>
+          <li class="crumb"><a href="#">Bikes</a></li>
+          <li class="crumb"><a href="#">BMX</a></li>
+          <li class="crumb">Jump Bike 3000</li>
+        </ol>
+      </nav>
+      <section>
+        <h2>Introduction</h2>
+        <p><cite>This document</cite> provides a guide to help with the important task of choosing the correct Apple.</p>
+      </section>
+</body>
+</html>
