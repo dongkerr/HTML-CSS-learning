@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器的权重</title>
+    <style>
+        div.box1{
+            color: red !important;
+        }
+        div.box1{
+            color: yellow;
+        }
+
+        .box1{
+            color: blue;
+        }
+
+        /* #box2{
+            color: yellow;
+        } */
+    /* 
+        样式的冲突
+            - 当我们使用不同的选择器，选择同一个元素并设置相同的样式时，就发生了样式的冲突
+            - 当样式冲突发生时，哪个样式生效🈶️选择器的优先级(权重)决定:
+                继承的样式：没有优先级
+                通配选择器：0,0,0,0
+                元素的选择器：0,0,0,1
+                类和伪类选择器：0,0,1,0
+                id选择器：0,1,0,0
+                内联样式：1,0,0,0
+            
+            - 比价优先级时，需要将多个选择器的优先级一起计算
+                优先级高的优先显示，优先级的累加无法跨越数量级,
+                如果优先级一样,则优先显示靠下的样式
+                如果为样式添加 !important，则该样式会获得最高的优先级，优先于其他样式显示，慎用！！
+
+                注意：分组选择器的优先级都是单独计算的！
+
+
+                div.box1: 0,0,1,1
+                .box1: 0,0,1,0
+
+                #box1 0,1,0,0
+                .box1.box2.box3.box5.box6.box7.box8.box9.box10.box11{} 0,0,11,0
+
+
+    */
+        /* *{
+            color: deepskyblue;
+        }*/
+
+        div, #box1, .box2{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1" id="box2" style="color: blue;">
+        我是div
+        <p>我是p元素</p>
+    </div>
+</body>
+</html>

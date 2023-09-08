@@ -24,6 +24,18 @@
         section::before{
             content: "> ";
         }
+
+        p::first-letter{
+            font-size: 30px;
+        }
+
+        p::first-line{
+            background-color: orange;
+        }
+
+        p::selection{
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
@@ -35,6 +47,12 @@
                 - 元素的开始位置（开始标签之后）
             ::after
                 - 元素的结束位置（结束标签之前）
+            ::first-letter
+                - 首字母
+            ::first-line
+                - 第一行
+            ::selection
+                - 选中的文字的样式
      -->
     
     <div>我是一个div</div>
@@ -45,5 +63,9 @@
     <section>第三项</section>
     <section>第四项</section>
 
+    <hr>
+    <p>了解清楚y2k到底是一种怎么样的存在，是解决一切问题的关键。 我们不得不面对一个非常尴尬的事实，那就是， 卡莱尔曾经提到过，过去一切时代的精华尽在书中。带着这句话，我们还要更加慎重的审视这个问题： 既然如何， 黑格尔说过一句富有哲理的话，只有永远躺在泥坑里的人，才不会再掉进坑里。这启发了我， 可是，即使是这样，y2k的出现仍然代表了一定的意义。</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione nesciunt aperiam vel iusto delectus neque mollitia aliquam? Illo est eius dolore voluptatem! Sunt esse maiores repellat, voluptatum aliquam accusantium natus?</p>
+    
 </body>
 </html>
