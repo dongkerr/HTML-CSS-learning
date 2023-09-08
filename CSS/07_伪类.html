@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+
+
+        结构伪类:
+            :root
+                - 根元素
+            :empty
+                - 空元素
+            :first-child
+                - 第一个子元素
+            :first-of-type
+                - 同类型中的第一个子元素
+            :last-child
+                - 最后一个子元素
+            :last-of-type
+                - 同类型中的最后一个子元素
+            :nth-child
+                - 第n个子元素
+            :nth-of-type
+                - 同类型中第n个子元素
+            :nth-last-child
+                - 倒数第n个元素
+            :nth-last-of-type
+                - 同类型中倒数第n个元素
+            :only-child
+                - 同类型中唯一的子元素
+            :only-of-type
+                - 同类型中唯一的子元素
+        */
+
+        .box1, .box2{
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+        }
+
+        div:empty{
+            background: yellow;
+        }
+
+        li:first-child{
+            color: tomato;
+        }
+
+        li:first-of-type{
+            color: skyblue;
+        }
+
+        /* n表示从0开始的整数 */
+        li:nth-child(2n){
+            color: orange;
+        }
+        li:nth-child(even){
+            color: orange;
+        }
+        li:nth-child(odd){
+            color: green;
+        }
+
+        li:nth-last-child(1){
+            color: tomato;
+        }
+
+        li:only-child{
+            color: blue;
+        }
+
+        li:only-of-type{
+            color: blue;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <span>我是小span</span>
+    <li>我是body的li</li>
+    <div class="box1">box1</div>
+    <hr>
+    <div class="box2"></div>
+    <hr>
+    <ul>
+        <li>第1个li</li>
+        <li>第2个li</li>
+        <li>第3个li</li>
+        <li>第4个li</li>
+        <li>第5个li</li>
+
+    </ul>
+
+    <ul>
+        <li>我是我爹唯一的儿子</li>
+    </ul>
+</body>
+</html>
