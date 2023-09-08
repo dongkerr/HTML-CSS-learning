@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素</title>
+    <style>
+        /* 
+            通过before、after可以选中元素开始或结束的位置，从而为其添加内容
+                注意：这里的内容是通过CSS添加的！不算是网页中的正式内容
+                    1. 通过它可以为元素添加一些统一的符号
+                    2. 也可以在特殊场景下通过他们来调整一下页面的样式
+        */
+        div::before{
+            content: "before";
+            color: red;
+        }
+
+        div::after{
+            content: "after";
+            color: red;
+        }
+
+        section::before{
+            content: "> ";
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        伪元素
+            - 伪元素表示的是页面中特殊的位置
+            - 伪元素使用::开头
+            ::before
+                - 元素的开始位置（开始标签之后）
+            ::after
+                - 元素的结束位置（结束标签之前）
+     -->
+    
+    <div>我是一个div</div>
+    <hr>
+
+    <section>第一项</section>
+    <section>第二项</section>
+    <section>第三项</section>
+    <section>第四项</section>
+
+</body>
+</html>
