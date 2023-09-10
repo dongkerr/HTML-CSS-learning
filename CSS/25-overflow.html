@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /* 
+            当子元素大小超过父元素内容区时，子元素会从父元素中溢出（overflow）
+            在css通过overflow这个样式，来处理溢出内容
+
+            overflow
+                - 设置元素如何处理溢出内容
+                - 可选值：
+                    visible，默认值 溢出内容直接在元素以外的位置显示
+                    hidden 隐藏衣橱的内容
+                    scroll 生成双方向滚动条，通过滚动条来查看完整内容
+                    auto 根据需要生成滚动条
+            */
+
+            overflow: auto;
+        }
+        
+        .box2{
+            width: 100px;
+            /* height: 400px; */
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">奥飞机哦皮肤滑9片恢复后发觉爱哦发i啊啊我发际哦我放假哦啊鹅几分哦啊啊我发际哦我姐夫i哦啊就无法i家哦啊我姐夫i哦啊我i减肥i哦爱我i叫放假啊我发i家啊我姐夫ii哦啊我姐夫i哦啊今晚佛i阿维腹肌哦啊姐i o</div>
+    </div>
+</body>
+</html>
