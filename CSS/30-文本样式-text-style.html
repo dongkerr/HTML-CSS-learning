@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            /* 
+                text-align 文本的水平对齐方式
+                    可选值：
+                        left 默认值 左对齐
+                        center 居中对齐
+                        right 右对齐
+                        justify 两端对齐
+                
+                网页中，图片，行内块，都可以使用文本对齐方式
+
+                text-indent 首行缩进
+                    - 可以设置负值
+                        - 正值文字向右移动
+                        - 负值文字向左移动
+                            - 可以利用负值隐藏网页中的一些文字，或者直接font-size：0;来隐藏
+                
+                text-decoration 文本修饰
+                    - 可选值：
+                        none 默认值 没有修饰
+                        underline 下划线
+                        overline 上划线
+                        line-through 删除线
+
+
+            */
+            text-align: justify;
+
+            text-indent:2em;
+
+            text-decoration:underline dotted red;
+        }
+        .box1{
+            width: 300px;
+            height: 300px;
+            border: 10px red solid;
+            text-align: center;
+        }
+        .box2{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: deepskyblue;
+        }
+
+        .box3{
+
+            /* text-indent: -9999em; */
+            font-size: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box3">hello hello how are u</div>
+    <p>
+        藍色的夜 擁抱著我們
+        美好的事 總在夜晚發生
+        就像彗星 掠過了清晨
+        美好的事 無法久存
+        都說智者 從不入愛河
+        對我來說 愛是偶然 而不可預測
+        該中的時候 是非中不可
+        也許人是 最不徹底的
+        海過了一夜還是藍色
+        若我們相愛
+        這擁抱永遠不會放開
+        我想成為你身上的海
+        若你是藍色 我也是藍色
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit itaque deleniti molestiae atque dolore ea nisi nostrum doloribus, quaerat, non culpa animi voluptatibus omnis officiis enim eveniet rerum, deserunt autem.</p>
+    <div class="box1">
+        <div class="box2"></div>
+        <img src="../img/IMG_9207.JPG" alt="" width="100">
+    </div>
+
+</body>
+</html>

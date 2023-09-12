@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            margin: 0;
+        } */
+
+        /* 清除元素的默认样式 */
+        *{
+            /* 重置元素的margin和padding */
+            margin: 0;
+            padding: 0;            
+        }
+
+        body{
+            background-color: #333;
+        }
+        /* 
+            网页中的很多元素都会自带一些默认样式
+        */
+        ul{
+            /* 去除项目符号 */
+            list-style: none;
+            width: 190px;
+            /* height: 470px; */
+            background-color: #fff;
+            border-bottom: 1px red solid;
+            /* margin: 0;
+            padding: 0; */
+        }
+        
+        ul li{
+            margin-bottom: 10px;
+        }
+
+        img{
+            /* 
+                vertical-align 垂直对齐方式
+                    默认值时baseline，只要不是baseline就没有那条缝
+                    一版我们用top
+            */
+            vertical-align: top;
+            width: 190px;
+
+        }
+
+        /* .box{
+            border: 2px red solid;
+        } */
+    </style>
+</head>
+<body>
+
+    <!-- 
+        在网页中，图片的对齐方式和文字时一样的，默认都是沿着元素的基线对齐的
+     -->
+
+    <!-- <div class="box">
+        <img src="../img/好物推荐.png.avif" alt="好物推荐">
+        哈哈哈今天天气真不错
+        asdfadfafsafap
+    </div> -->
+
+    <!-- 定义结构 -->
+    <ul class="outer">
+        <li>
+            <a href="https://pro.jd.com/mall/active/3pNpoWbnFmViXhUcRrQDvsvookUA/index.html">
+                <img src="../img/好物推荐.png.avif" alt="好物推荐">
+            </a>        
+        </li>
+        <li>
+            <a href="https://pro.jd.com/mall/active/3bueJKziNXg8gXpZyAZ2EFTuXap4/index.html">
+                <img src="../img/第二件半价.png.avif" alt="第二件半价">
+            </a>
+        </li>
+        <li>
+            <a href="https://prodev.jd.com/mall/active/4CbNduaE946DLsfz59RSkiu1FVUy/index.html">
+                <img src="../img/小米手机.png.avif" alt="">
+            </a>
+        </li>
+    </ul>
+    <div style="width: 100px; height: 100px; background-color: red;"></div>
+
+    <!-- <div>
+        <a href="https://pro.jd.com/mall/active/3pNpoWbnFmViXhUcRrQDvsvookUA/index.html">
+            <img src="../img/好物推荐.png.avif" alt="好物推荐">
+        </a>
+        <a href="https://pro.jd.com/mall/active/3bueJKziNXg8gXpZyAZ2EFTuXap4/index.html">
+            <img src="../img/第二件半价.png.avif" alt="第二件半价">
+        </a>
+        <a href="https://prodev.jd.com/mall/active/4CbNduaE946DLsfz59RSkiu1FVUy/index.html">
+            <img src="../img/小米手机.png.avif" alt="">
+        </a>
+    </div> -->
+</body>
+</html>
