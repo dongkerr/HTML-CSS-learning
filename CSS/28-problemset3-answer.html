@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+background-color: #333;
+            font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        /* 设置外层容器 */
+        .card{
+            box-sizing: border-box;
+            width: 234px;
+            height: 300px;
+            padding: 20px 0;
+            background-color: #fff;
+            text-align: center;
+margin: 100px auto;
+            
+        }
+
+        .img-wrapper{
+            width: 160px;
+            height: 160px;
+            margin: 0 auto;
+        }
+        .img-wrapper img{
+            vertical-align: top;
+            width: 100%;
+        }
+
+        /* 设置标题 */
+        .card h3{
+            color: #333;
+            font-size: 14px;
+            font-weight: normal;
+            margin-top: 18px;
+        }
+        /* 设置描述文字 */
+        .card .desc{
+            margin: 2px 10px 10px;
+            color: #b0b0b0;
+            font-size: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* 设置价格 */
+        .price span{
+            color: #ff6700;
+            font-size: 14px;
+        }
+
+        .price del{
+            color: #b0b0b0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="../img/平板.webp" alt="平板">
+            </div>
+            <h3>Xiaomi Pad 6 Pro</h3>
+            <p class="desc">骁龙8+旗舰处理器｜11英寸2.8K护眼屏｜8600mAh 67W快充｜MIUI高效办公体验</p>
+            <div></div>
+        <div class="price">
+            <span>2399元起</span>
+            <del>2499元</del>
+        </div>
+    </a>
+    
+</body>
+</html>
