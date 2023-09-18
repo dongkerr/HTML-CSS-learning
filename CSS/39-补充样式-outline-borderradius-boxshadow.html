@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>样式</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /* border: red 10px solid; */
+
+            /* 
+                outline 轮廓线
+                    - 和边框非常像，但是outline不会影响到元素可见框的大小
+            */
+            /* outline: red 10px dotted; */
+        }
+
+        .box1:hover{
+            outline: red 10px dotted;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /* border: red 10px solid; */
+
+            /* 左上角圆角的半径 */
+            /* border-top-left-radius: 50px;
+            border-top-right-radius: 60px;
+            border-bottom-right-radius: 70px;
+            border-bottom-left-radius: 100px; */
+
+            /* border-radius 同时指定四个圆角的半径 */
+            border-radius: 50% ;
+
+            /* 左上 右上 右下 左下 */
+            border-radius: 10px 40px 80px 100px;
+
+            border-radius: 20px;
+
+            /* 
+                box-shadow
+                    - 可以用来为元素指定阴影
+                    - 不会影响布局 纯装饰效果
+                    - 取值
+                        box-shadow: x轴偏移量 y轴偏移量 模糊半径 扩散半径 阴影颜色;
+                        可以设置一个inset来表示一个内阴影
+            */
+            box-shadow: inset 20px 20px 20px 0 rgba(0, 0, 0, .5);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
