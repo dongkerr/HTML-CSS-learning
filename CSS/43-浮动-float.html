@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 200px;
+            background-color: #bfa;
+
+            /* 
+                float
+                    - 设置元素浮动
+                    - 可选值：
+                        none，默认值 元素不浮动
+                        left，向左浮动
+                        right，向右浮动
+                    - 浮动的特点：
+                        1.设置浮动后，元素会脱离文档流，其后的元素会自动上移
+                        2.设置浮动后，元素会向其包含块的左侧或右侧移动
+                        3.如果一行之内无法容纳所有的浮动元素，则后边的元素会自动换到下一行
+                        4.浮动元素不会超过它上边浮动的兄弟元素，最多一边齐
+                        5.浮动元素不会盖住文字，文字会环绕在浮动元素的周围
+            */
+            float: left;
+        }
+        .box2{
+            width: 500px;
+            height: 200px;
+            background-color: yellowgreen;
+            float: left;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            float: right;
+        }
+        .box4{
+            width: 200px;
+            height: 200px;
+            background-color: deepskyblue;
+            float: left;
+        }
+        p{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        浮动（float）
+            - 是一种传统的网页的布局方式
+            - 通过浮动可以使得元素脱离文档流而横向排列
+     -->
+    <div class="box4"></div>
+    <p>今天天气真不错《CSS权威指南（CSS: The Definitive Guide）》是Eric A. Meyer所著，第三版发布于2006年。从2012年开始，CSS权威指南的第四版开始以分章节的形式由O’Reilly发行，目前已经发布了十章。
+
+        《CSS权威指南（第四版）》的第一章《CSS and Documents》在O’Reilly上是免费提供的，其它章节则不是。因此，这里将提供第一章的完整翻译，其后的章节则以重点总结和摘要翻译的形式提供。
+        
+        如果您喜欢本书内容，请至此处购买英文原版，期待第四版尽快发行完整版并有国内出版商引入中文版。
+        
+        CSS的标准更新非常快，本书的第一章写于2012年，现在来看有些内容已经略有落后，而等到第四版的中文版引入国内时，又不知何年何月了。</p>
+     <hr>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
