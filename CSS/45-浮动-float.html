@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        /* 设置外层nav的样式 */
+        .nav{
+            width: 900px;
+            height: 40px;
+            background-color: #333;
+            line-height: 40px;
+margin: 100px auto;
+        }
+
+        /* 菜单项 */
+        .nav li{
+            float: left;
+            width: 150px;
+            height: 40px;
+            text-align: center;
+        }
+        .nav li:hover{
+            background-color: #706f6f;
+        }
+
+        /* 设置超链接 */
+        .nav a{
+            display: block;
+            width: 150px;
+            height: 40px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        导航条
+            首页  新闻  ...   关于我
+     -->
+    <nav>
+        <ul class="nav">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">财经</a></li>
+            <li><a href="#">美妆</a></li>
+            <li><a href="#">娱乐</a></li>
+            <li><a href="#">美食</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
