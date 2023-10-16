@@ -27,7 +27,10 @@ margin: 100px auto;
         .nav li{
             float: left;
             width: 150px;
-            height: 40px;
+            /* height: 40px; */
+            /* 如果里面的a不设置成block，那它就是行内元素，有基线，会导致li下面出来一块
+               但是如果我们把a设置成block，这里不设置height=40px下面也不会出来
+            */
             text-align: center;
         }
         .nav li:hover{
@@ -37,8 +40,7 @@ margin: 100px auto;
         /* 设置超链接 */
         .nav a{
             display: block;
-            width: 150px;
-            height: 40px;
+            /* height: 40px; */
             text-decoration: none;
             font-size: 18px;
             font-weight: bold;
