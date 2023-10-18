@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高度塌陷</title>
+    <style>
+        .box1{
+            /* overflow: hidden; */
+            display: flow-root;
+            border: 10px red solid;
+        }
+        
+        .box2{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            
+        }
+
+        .box3{
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+        }
+
+        /* 
+            BFC(block formatting context)
+                - 块级格式化环境
+                - https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context
+                - 可以将BFC理解成一个隐藏的属性，当开启BFC后元素会具备以下特征：
+                    1. 开启BFC后，子元素的垂直外边距不会传递给父元素
+                    2. 开启BFC后，元素不会被浮动元素所覆盖
+                    3. 开启BFC后，元素可以包含浮动的子元素
+                
+                - 如何开启BFC：
+                    - 需要用一些其他的样式间接开启BFC
+                    - 由于BFC是通过一些样式间接开启，所以都会有一些副作用，
+                        而我们要做的是找到一种可以开启BFC，同时副作用又比较小的
+                    - 例如：
+                        1. 浮动会开启BFC
+                        2. 将overflow设置为一个非visible的值
+                        3. display: flow-root;没什么副作用，是最好的
+        */
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+
+        </div>
+    </div>
+    <div class="box3"></div>
+</body>
+</html>
