@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位</title>
+    <style>
+        .box1{
+            width: 800px;
+            height: 600px;
+            border: 10px red solid;
+            position: relative;
+            
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            margin: auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            /* 
+                盒子模型的等式
+                    margin-left + 可见框宽度 + margin-right = 包含块的内容区宽度
+                当元素开启了绝对定位后，2个新的等式诞生了！
+                    left + margin-left + 可见框宽度 + margin-right + right = 包含块的内容区宽度
+                    top + margin-top + 可见框高度 +  margin-bottom + bottom = 包含块的内容高度
+
+                    auto +    auto     +    200   +     auto     +  auto  =   800
+                    因为left和right的两个auto会保持元素的位置不变
+                    0 + auto + 200 + auto + 0 = 800
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
