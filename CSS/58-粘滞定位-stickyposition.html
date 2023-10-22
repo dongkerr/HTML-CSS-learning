@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粘滞定位</title>
+    <style>
+        body{
+            height: 4000px;
+        }
+        .box1{
+            width: 1200px;
+            height: 40px;
+            background-color: tomato;
+            margin: 100px auto;
+
+            /* 
+                将元素的position设置sticky则开启了元素的粘滞定位
+                    特点跟相对定位类似
+                定位参照物：
+                    粘滞定位相对于离他最近的拥有滚动条的祖先元素来定位的
+            */
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <p>This is a data exercise using World Bank Health data. You will need data on educational attainment for this, use the dataset Health WB.csv, available on OLAT. Make sure you have a dataset at the country-time level. There are country aggregates in the dataset, make sure you remove them before doing the analysis. Work on the period 1990-2010 only. You can find the labels of the variables in the document variables label.xlsx. You need to replace the name of the variables with their label for a clear understanding of your tables. You need to combine and present all of your results in well-formatted, easily readable tables. This means that you should not include a screenshot of the raw output from R or Stata. The results for the three regressions need to be in one unique table.</p>
+
+</body>

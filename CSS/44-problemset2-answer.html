@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东顶部导航</title>
+    <link rel="stylesheet" href="./css-reset/reset.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <style>
+        body{
+            font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+            /* 
+                inherit 表示继承祖先的样式
+            
+            */
+        }
+
+        .outer{
+            min-width: 1190px;
+            height: 30px;
+            border-bottom: 1px #ddd solid;
+            background-color: #e3e4e5;
+        }
+        .menu{
+            width: 1190px;
+            height: 30px;
+            margin: 0 auto;
+            line-height: 30px;
+            color: #999;
+        }
+
+        /* 设置左侧菜单 */
+        .city{
+            float: left;
+            cursor: pointer;
+        }
+        .city i{
+            color: #f10215;
+            font-size: 14px;
+        }
+        .city .current{
+            padding: 0 7px;
+            
+        }
+        /* 设置右侧菜单 */
+        .user-info{
+            float: right;
+        }
+
+        .user-info li{
+            float: left;
+            padding: 0 7px;
+            /* 因为字两边的空白不能点，所以内边距设给li
+                如果空白可以点，内边距设给超链接a */
+        }
+
+        .user-info a:hover,
+        .user-info li>div:hover,
+        .user-info .hot{
+            color: #f10215;
+        }
+
+        .user-info .line{
+            float: left;
+            /* 设置小竖线 */
+            /* border-left: 1px #ccc solid; */
+            width: 1px;
+            background-color: #ccc;
+            height: 10px;
+            margin: 10px 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 创建一个外部容器 -->
+    <div class="outer">
+        <div class="menu">
+            <!-- 左侧菜单 -->
+            <div class="city">
+                <div class="current">
+                    <!-- 设置小图标 -->
+                    <i class="fa-solid fa-map-marker-alt"></i>
+                    <span>北京</span>
+                </div>
+            </div>
+            <!-- 右侧菜单 -->
+            <ul class="user-info">
+                <li>
+                    <a href="#">你好，请登录</a>
+                </li>
+                <li>
+                    <a class="hot" href="#">免费注册</a>
+                </li>
+                <span class="line"></span>
+                <li>
+                    <a href="#">我的订单</a>
+                </li>
+                <span class="line"></span>
+                <li>
+                    <a href="#">我的京东</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <span class="line"></span>
+                <li>
+                    <a class="hot" href="#">企业采购</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </li>
+                <span class="line"></span>
+                <li>
+                    <div>
+                        <span href="#">商家服务</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </li>
+                <span class="line"></span>
+                <li>
+                    <div>
+                        <span href="#">网站导航</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </li>
+                <span class="line"></span>
+                <li>
+                    <div>
+                        <span href="#">手机京东</span>
+                    </div>
+                </li>
+                <span class="line"></span>
+                <li>
+                    <a href="#">网站无障碍</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

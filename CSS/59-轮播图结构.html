@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东轮播条</title>
+    <!-- 引入重置样式表 -->
+    <link rel="stylesheet" href="./css-reset/reset.css">
+    <!-- 引入font awesome -->
+    <link rel="stylesheet" href="./css/all.css">
+    <style>
+        img{
+            vertical-align: top;
+        }
+
+        /* 设置外层容器的样式 */
+        .banner{
+            width: 590px;
+            height: 470px;
+margin: 100px auto;
+            position: relative;
+        }
+
+        /* 设置图片 */
+
+        .img-list li{
+            /* 开启绝对定位 */
+            position: absolute;
+        }
+
+        .img-list li:nth-child(3){
+            z-index: 1;
+        }
+
+        /* 设置左右翻页的箭头 */
+        .prev, .next{
+            box-sizing: border-box;
+            position: absolute;
+            z-index: 999;
+            width: 25px;
+            height: 35px;
+            color: rgba(255, 255, 255, .8);
+            background-color: rgba(0, 0, 0, .15);
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            line-height: 35px;
+            font-size: 16px;
+            /* 设置鼠标的形状 */
+            cursor: pointer;
+        }
+
+        .next{
+            right: 0;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            padding-left: 12px;
+        }
+
+        .prev{
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            padding-left: 6px;
+        }
+
+        .prev:hover, .next:hover{
+            background-color: rgba(0, 0, 0, .4);
+        }
+
+        /* 设置导航点的样式 */
+        .slider-indicators{
+            position: absolute;
+            z-index: 999;
+            bottom: 20px;
+            left: 30px;
+        }
+        .slider-indicators li{
+            float: left;
+            box-sizing: border-box;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, .4);
+            border: 1px solid rgba(0, 0, 0, .05);
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .slider-indicators li:hover,
+        .slider-indicators li.active{
+            outline: 3px solid rgba(0, 0, 0, .1);
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- 轮播图最外层容器 -->
+    <div class="banner">
+        <!-- 图片容器 -->
+        <ul class="img-list">
+            <li>
+                <a href="#">
+                    <img src="../img/q.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/q (1).jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/q (2).jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/q (3).jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/q (4).jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/q (5).jpg" alt="">
+                </a>
+            </li>
+        </ul>
+        <!-- 左右翻页 -->
+        <div class="prev-next">
+            <div class="prev">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="next">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+        <!-- 导航小点 -->
+        <ul class="slider-indicators">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+</body>
+</html>
