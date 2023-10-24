@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位总结</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            /* position: relative; */
+            /* top: 200px;
+            left: 200px; */
+            /* left: 200px;
+            bottom: 100px; */
+            /* top: 100px; */
+            /* right: 100px; */
+            /* left: -100; */
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        相对定位
+            - 不脱离文档流
+            - 相对定位参照元素在文档流中的位置进行定位
+            - 相对定位更多的是配合决定定位来使用
+            
+        绝对定位
+            - 脱离文档流
+            - 绝对定位元素是参照于它的包含块来定位的
+            - 在网页中定位的主要手段就是绝对定位
+
+        固定定位
+            - 脱离文档流
+        粘滞定位
+
+        offset(偏移量)
+            - 四个偏移量，可以有四种组合方式
+                top left 通过左上角定位
+                top right 通过右上角定位
+                bottom left 通过左下角定位
+                bottom right 通过右下角定位
+     -->
+    <div>我是一个span</div>
+</body>
+</html>
