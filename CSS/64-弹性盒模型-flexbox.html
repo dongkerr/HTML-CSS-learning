@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性盒模型</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        /* 
+            弹性容器
+                - 要使用弹性盒必须先将元素设置为弹性容器
+                    disolay:flex 块级弹性容器
+                    display:inline-flex 行内弹性容器
+            
+            弹性项（弹性子元素）
+                - 弹性容器的子元素都会自动变成弹性项
+                - 弹性子元素都会沿着弹性容器的主轴排列
+
+            主轴
+                - 主轴就是弹性子元素的排列方向
+
+            侧轴（辅轴）
+                - 侧轴是与主轴垂直方向的轴
+        */
+
+        ul{
+            display: flex;
+            width: 800px;
+            border: 10px red solid;
+            /* display: flow-root; */
+        }
+
+        li{
+            width: 100px;
+            height: 100px;
+            /* float: left; */
+            /* display: flex; */
+            line-height: 100px;
+            font-size: 50px;
+            color: #fff;
+            text-align: center;
+        }
+
+        li:nth-child(1){
+            background-color: #bfa;
+        }
+
+        li:nth-child(2){
+            background-color: orange;
+        }
+
+        li:nth-child(3){
+            background-color: yellowgreen;
+        }
+
+        li:nth-child(4){
+            background-color: tomato;
+        }
+
+        li:nth-child(5){
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        弹性盒是CSS3中新添加的布局方式，通过它可以更加方便完成我们对网页的布局
+            通过弹性盒模型，可以便捷完成网页中的各种布局
+
+     -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>
