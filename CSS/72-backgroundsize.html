@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        .box1{
+            width: 400px;
+            height: 400px;
+            /* background-color: #bfa;
+            background-image: url(./image/平板.webp);
+            background-repeat: no-repeat; */
+
+            /* 
+                background-size 用来设置背景图片的尺寸, 一般会缩小不会放大（失真）
+            */
+            /* background-size: 200px auto; */
+            /* background-size: auto 200px; */
+            /* background-size: 200px 200px; */
+            /* background-size: 100% 100%; */
+            /* background-size: 100% auto; */
+            /* background-size: auto 100%; */
+
+            /* contain 缩放图片使得图片可以在元素中完整显示，元素有的地方可能会不显示背景 */
+            /* background-size: contain; */
+
+            /* cover 缩放图片使得图片可以将元素撑满，图片可能会显示不全 */
+            /* background-size: cover; */
+
+            background: #bfa url(./image/平板.webp) no-repeat 0 0/auto 100%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>
